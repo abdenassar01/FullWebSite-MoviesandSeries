@@ -1,0 +1,85 @@
+.content {
+  /* background-color: rgb(133, 150, 156); */
+  /* background: #00bfff; */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(44, 201, 240) 53%,
+    rgb(119, 230, 202) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 15vh;
+  height: fit-content;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  margin: 10px;
+  /* margin-left: 15px; */
+  border-radius: 10px;
+  height: 400px;
+  background-color: white;
+  border-top-left-radius: 30px;
+  text-align: center;
+}
+
+.img {
+  width: 200px;
+  height: 300px;
+  border-top-left-radius: 30px;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card a {
+  position: absolute;
+  bottom: 3px;
+  text-decoration: none;
+  padding: 2px 6px;
+  align-items: center;
+  display: inline-block;
+  color: white;
+  background-color: teal;
+  border-radius: 10px;
+  margin-right: 3px;
+  border: 1px solid rgb(8, 5, 1);
+}
+
+.card a:hover {
+  padding-left: 3%;
+  transform: skewY(5deg);
+  background-color: rgb(12, 143, 67);
+  border-color: black;
+}
+
+body {
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  a:hover {
+    padding: 2px 7px;
+  }
+  header {
+    display: block;
+    height: 100px;
+  }
+  header ul {
+    margin-top: none;
+  }
+}
